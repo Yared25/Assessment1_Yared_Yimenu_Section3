@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, main {
+    background-color: #f5f5f5; /* Light gray background for contrast */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #98ceae; /* Greenish color for header */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #f5f5f5; /* Same as the background */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #008000; /* Green navigation links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00695c; /* Darker green on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333;
+}
+
+.product-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: #f5f5f5; /* Matches the background color */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 30%;
+    text-align: center;
+    background-color: #ffffff; /* Bright white product box */
+    padding: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product p {
+    padding: 10px;
+    color: #555;
+}
+
+.price {
+    color: #008000; /* Green for price */
+    font-weight: bold;
+}
+
+footer {
+    background-color: #006400; /* Dark green for footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
